@@ -1,6 +1,6 @@
 name: getx_test
 description: A package that facilitates the creation of tests for applications built with GetX
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/cyenite/getx_test.git
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   mockito: ">=5.0.17 <6.0.0"
-  get: any
+  get:  ^4.6.5
   meta: ">=1.7.0 <2.0.0"
   flutter_test:
     sdk: flutter

@@ -26,11 +26,11 @@ void main() {
     widget: GetX<Controller>(
       init: Controller(),
       builder: (controller) {
-        return Text("ban:${controller.count}");
+        return Text("Clicks:${controller.count}");
       },
     ),
     test: (e) {
-      expect(find.text("ban:0"), findsOneWidget);
+      expect(find.text("Clicks:0"), findsOneWidget);
       expect(e.count.value, 0);
     },
   );
