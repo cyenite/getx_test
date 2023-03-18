@@ -110,7 +110,9 @@ void getTest(
     } else if (getPages != null) {
       wrapper = _Wrapper(initialRoute: initialRoute, getPages: getPages);
     } else {
-      wrapper = _Wrapper();
+      wrapper = _Wrapper(
+        child: const Scaffold(),
+      );
     }
   }
 

@@ -1,6 +1,6 @@
 name: getx_test
 description: A package that facilitates the creation of tests for applications built with GetX
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/cyenite/getx_test.git
 
 environment:
