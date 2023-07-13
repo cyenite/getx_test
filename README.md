@@ -18,7 +18,7 @@ Add the following dependency to your `pubspec.yaml` file:
 
 Import the required packages and create a test case using the `getTest` method. Inside the `widgetTest` callback, use the `expect` method to test your GetX app's behavior.
 
-
+```dart
     import 'package:flutter/material.dart';  
     import 'package:flutter_test/flutter_test.dart';  
     import 'package:get/get.dart';  
@@ -40,12 +40,12 @@ Import the required packages and create a test case using the `getTest` method. 
 		    expect('/Container', Get.currentRoute); 
 		});  
     }
-
+```
 
 You can also use `testGetX`, `testGetBuilder`, and `testObx` to test specific GetX widgets:
 
 
-
+```dart
     testGetX(  
       'GetX test',  
       widget: GetX<Controller>(  
@@ -59,9 +59,9 @@ You can also use `testGetX`, `testGetBuilder`, and `testObx` to test specific Ge
         expect(e.count.value, 0);  
       },  
     );
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+```
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+```dart
     testGetBuilder(  
       'GetBuilder test',  
       widget: GetBuilder<Controller>(  
@@ -75,9 +75,10 @@ You can also use `testGetX`, `testGetBuilder`, and `testObx` to test specific Ge
         expect(e.count.value, 0);  
       },  
     );
+```
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
+```dart
     testObx(  
       'Obx test',  
       widget: (controller) => Obx(  
@@ -89,12 +90,11 @@ You can also use `testGetX`, `testGetBuilder`, and `testObx` to test specific Ge
         expect(e.count.value, 0);  
       },  
     ); 
-
+```
 
 Finally, you can test your `GetxController` instances with `testController`:
 
-
-
+```dart
     testController<Controller>(  
       'Controller test',  
       (controller) {
@@ -113,7 +113,7 @@ Finally, you can test your `GetxController` instances with `testController`:
         print('onClose');  
       },  
     );
-
+```
 
 Examples
 --------  
